@@ -40,6 +40,18 @@
                 android:resource="@xml/simple_widget_info" />
         </receiver>
 
+        <receiver
+            android:name=".ProjectWidget"
+            android:exported="true"
+            android:label="Widget Proyecto Final">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/project_widget_info" />
+        </receiver>
+
     </application>
 
 </manifest>
